@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_label">Timefor — ограничение приложений</string>
+    <string name="accessibility_service_description">Замечает, когда вы открываете выбранное приложение, спрашивает, сколько времени вы хотите в нём провести, и закрывает его, когда время вышло. Timefor не читает и не сохраняет содержимое экрана.</string>
+
+    <string name="service_enabled">Timefor работает. Выберите приложения для ограничения.</string>
+    <string name="service_disabled">Чтобы замечать запуск ограниченных приложений, Timefor нужно разрешение «Специальные возможности».</string>
+    <string name="enable_service">Включить в настройках</string>
+    <string name="apps_header">Спрашивать перед открытием:</string>
+    <string name="search_hint">Поиск приложений</string>
+
+    <string name="picker_title">Сколько времени вы хотите провести в %1$s?</string>
+    <string name="picker_minutes">минут</string>
+    <string name="preset_minutes">%1$d мин</string>
+    <string name="picker_start">Открыть на %1$d мин</string>
+    <string name="picker_cancel">Передумал(а), не открывать</string>
+
+    <string name="toast_one_minute_left">В %1$s осталась 1 минута</string>
+    <string name="toast_time_up">Время в %1$s вышло</string>
+</resources>
