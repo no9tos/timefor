@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Timefor" parent="Theme.Material3.DayNight">
+    <!-- No window action bar: screens draw their own toolbar and handle system bar insets. -->
+    <style name="Theme.Timefor" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">#3F51B5</item>
     </style>
 
     <!-- Opaque, full screen: the limited app must not be usable behind the picker. -->
-    <style name="Theme.Timefor.Picker" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">#3F51B5</item>
-    </style>
+    <style name="Theme.Timefor.Picker" parent="Theme.Timefor" />
 </resources>

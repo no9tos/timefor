@@ -3,11 +3,13 @@ package com.timefor.app
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.NumberPicker
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
@@ -25,8 +27,10 @@ class TimePickerActivity : AppCompatActivity() {
     private var targetPackage: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_time_picker)
+        findViewById<View>(R.id.root).padForSystemBars()
         store = LimitStore(this)
 
         minutesPicker = findViewById(R.id.minutesPicker)
