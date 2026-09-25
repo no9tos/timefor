@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timefor</string>
+
+    <string name="accessibility_service_label">Timefor app limiter</string>
+    <string name="accessibility_service_description">Detects when you open an app you chose to limit, asks how long you want to use it, and closes it when the time is up. Timefor does not read or store what is on your screen.</string>
+
+    <string name="service_enabled">Timefor is active. Choose the apps to limit below.</string>
+    <string name="service_disabled">Timefor needs the Accessibility permission to notice when you open a limited app.</string>
+    <string name="enable_service">Enable in settings</string>
+    <string name="apps_header">Ask before opening:</string>
+    <string name="search_hint">Search apps</string>
+
+    <string name="picker_title">How long do you want to spend in %1$s?</string>
+    <string name="picker_minutes">minutes</string>
+    <string name="preset_minutes">%1$d min</string>
+    <string name="picker_start">Open for %1$d min</string>
+    <string name="picker_cancel">Never mind, don\'t open it</string>
+
+    <string name="toast_one_minute_left">1 minute left in %1$s</string>
+    <string name="toast_time_up">Time\'s up for %1$s</string>
+</resources>
