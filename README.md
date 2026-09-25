@@ -29,6 +29,12 @@ runs out, the app opens without asking.
 | `app/src/main/java/com/timefor/app/MainActivity.kt` | Permission status and the list of apps to limit. |
 | `app/src/main/java/com/timefor/app/LimitStore.kt` | Stores limited apps and session end times in SharedPreferences. |
 
+## Install
+
+Download the newest APK: https://github.com/no9tos/timefor/releases/download/latest/timefor.apk
+
+Every push rebuilds it. Install it over the previous version; your settings are kept.
+
 ## Build
 
 Requirements: JDK 17+ and the Android SDK (API 35). Open the project in Android Studio, or run:
