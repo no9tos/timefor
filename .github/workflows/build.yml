@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  # Keeps the cached signing key from expiring (GitHub drops caches unused for 7 days).
+  schedule:
+    - cron: "0 6 * * 1"
 
 jobs:
   build:
@@ -19,6 +22,14 @@ jobs:
           java-version: 17
 
       - uses: gradle/actions/setup-gradle@v4
+
+      # Sign every build with the same debug key. A fresh runner would otherwise generate a
+      # new key each time, and Android refuses to install an update signed with another key.
+      - name: Reuse the debug signing key
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore
 
       - name: Build debug APK
         run: ./gradlew assembleDebug --stacktrace

@@ -11,8 +11,10 @@ android {
         applicationId = "com.timefor.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        // CI builds are numbered by the workflow run, so each download shows its own version.
+        val ciRunNumber = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull()
+        versionCode = ciRunNumber ?: 1
+        versionName = if (ciRunNumber != null) "1.0.$ciRunNumber" else "1.0"
     }
 
     buildTypes {

@@ -5,6 +5,7 @@
 
     <string name="service_enabled">Timefor работает. Выберите приложения для ограничения.</string>
     <string name="service_disabled">Чтобы замечать запуск ограниченных приложений, Timefor нужно разрешение «Специальные возможности».</string>
+    <string name="version">Версия %1$s</string>
     <string name="enable_service">Включить в настройках</string>
     <string name="apps_header">Спрашивать перед открытием:</string>
     <string name="search_hint">Поиск приложений</string>

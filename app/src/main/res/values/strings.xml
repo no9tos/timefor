@@ -7,6 +7,7 @@
 
     <string name="service_enabled">Timefor is active. Choose the apps to limit below.</string>
     <string name="service_disabled">Timefor needs the Accessibility permission to notice when you open a limited app.</string>
+    <string name="version">Version %1$s</string>
     <string name="enable_service">Enable in settings</string>
     <string name="apps_header">Ask before opening:</string>
     <string name="search_hint">Search apps</string>

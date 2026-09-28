@@ -20,6 +20,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.materialswitch.MaterialSwitch
 import java.util.concurrent.Executors
 
@@ -37,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.root).padForSystemBars()
+        findViewById<MaterialToolbar>(R.id.toolbar).subtitle =
+            getString(R.string.version, packageManager.getPackageInfo(packageName, 0).versionName)
         store = LimitStore(this)
 
         findViewById<Button>(R.id.enableServiceButton).setOnClickListener {
