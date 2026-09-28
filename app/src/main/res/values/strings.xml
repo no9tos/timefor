@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Timefor</string>
+    <string name="app_name" translatable="false">Timefor</string>
 
     <string name="accessibility_service_label">Timefor app limiter</string>
     <string name="accessibility_service_description">Detects when you open an app you chose to limit, asks how long you want to use it, and closes it when the time is up. Timefor does not read or store what is on your screen.</string>
